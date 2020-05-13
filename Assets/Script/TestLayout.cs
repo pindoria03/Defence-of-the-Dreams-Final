@@ -91,7 +91,7 @@ public class TestLayout : MonoBehaviour
     
     public void mainworld() //load main world
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Bank.GetComponent<Bank>().entereddreaworld = 0; //reset the value
         Bank.GetComponent<Bank>().corruptionlevel =  MainworldDoor.GetComponent<MainWorldDoor>().corruptionlevel; //transfer the corruption level to the bank
     
