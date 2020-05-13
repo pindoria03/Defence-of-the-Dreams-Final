@@ -10,9 +10,16 @@ public class Dreamdimension : MonoBehaviour
     public bool dream;
 
 
-    void Start()
+    void Update()
     {
-        dream = counter.GetComponent<Counter>().dreamworld; 
+        if(counter.GetComponent<Counter>().dreamworld == true)
+        {
+            dream = true;
+        }
+        else
+        {
+            dream = false;
+        }
     }
 
     void OnTriggerEnter(Collider Collision)
